@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Scrollbar personalizado delgado y oscuro */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px; /* Ancho muy fino */
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* Fondo del carril casi invisible */
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* La barra en sí (gris tenue) */
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4); /* Un poco más brillante al pasar el mouse */
+}
